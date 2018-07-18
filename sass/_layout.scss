@@ -1,0 +1,39 @@
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-light-1);
+  box-shadow: var(--shadow-dark);
+
+  min-height: 50rem;
+}
+
+.header {
+  font-size: 1.4rem;
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--color-grey-light-2);
+  display: flex;
+  //center search element and place profile element at end
+  justify-content: space-between;
+  //align center top to bottom as well
+  align-items: center;
+}
+
+.content {
+  display: flex;
+}
+
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+
+  //define width
+  //dont grow if space- dont shrink if space - set width
+  flex: 0 0 18%;
+}
+
+.hotel-view {
+  background-color: #fff;
+
+  //grow to fit rest of space - width
+  flex: 1;
+}

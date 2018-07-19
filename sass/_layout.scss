@@ -29,6 +29,10 @@
   //define width
   //dont grow if space- dont shrink if space - set width
   flex: 0 0 18%;
+  display: flex;
+  //top to bottom
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hotel-view {
@@ -36,4 +40,6 @@
 
   //grow to fit rest of space - width
   flex: 1;
+  //for testing
+  height: 80rem;
 }

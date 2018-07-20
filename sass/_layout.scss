@@ -11,7 +11,7 @@
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-grey-light-2);
+  border-bottom: var(--line);
   display: flex;
   //center search element and place profile element at end
   justify-content: space-between;
@@ -40,6 +40,32 @@
 
   //grow to fit rest of space - width
   flex: 1;
-  //for testing
-  height: 80rem;
+}
+
+.detail {
+  //to make description and reviews side by side
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--line);
+  font-size: 1.4rem;
+}
+
+.description {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  //no grow/shrink use 60% width
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+}
+
+.user-reviews {
+  //occupy remaining space
+  flex: 1;
+
+  //center button
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
